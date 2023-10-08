@@ -1,5 +1,10 @@
 year=input("\nWelcome to Chinese Zodiac. Enter your year of birth in YYYY format:")
 
+if len(year)!=4:
+    print("Invalid YEAR")
+elif int(year)<1948 or int(year)>2031:
+    print("Year not in range (1948-2031)")
+
 rat=[1948, 1960, 1972, 1984, 1996, 2008, 2020]
 ox=[1949, 1961, 1973, 1985, 1997, 2009, 2021]
 tiger=[1950, 1962, 1974, 1986, 1998, 2010, 2022]
